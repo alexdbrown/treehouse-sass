@@ -1,0 +1,32 @@
+body {
+  background: #eee;
+}
+
+.blog {
+  > h1 {
+    color: red;
+    border: 1px solid black;
+  }
+  .entry {
+    h1 {
+      font-size: 80px;
+      color: pink;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 20px;
+      margin: 20px;
+      html.csscolumns & {
+        column-count: 2;
+        column-gap: 10px;
+        margin: 10px;
+      }
+    }
+    a {
+      color: green;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
